@@ -22,13 +22,13 @@ individual-settings
 bcd-default-settings
 add-pump
 if-you-are-upgrading-from-freeaps-x
-if-you-are-upgrading-from-loop-to-fax-ng
+if-you-are-upgrading-from-loop-to-iaps
 to-change-from-eros-to-dash-pods
 close-loop
-adjustment-factor-autosens
-ballpark-formula
 dynamic-isf
 to-switch-to-the-new-dynisf
+adjustment-factor
+ballpark-formula
 fine-tuning-using-your-log-files
 copying-your-log-files-to-your-mac
 setting-uamsmbsmb-limitations
@@ -41,7 +41,7 @@ an-easier-way-for-the-rest-of-us
 checking-the-results
 bolusing-for-meals
 rule-of-thumb-meal-bolusing
-let-fax-ng-do-its-work
+let-iaps-do-its-work
 how-to-use-this-guide
 the-sidebar
 the-toolbar
