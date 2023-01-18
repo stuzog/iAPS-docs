@@ -5,22 +5,22 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>iAPS User Guide</title>
-  <meta name="description" content="Settings and Steps for installing, setting up, and adjusting the iAPS iOS app, based on FreeAPS X and being used by BC Diabetes in Vancouver, BC Canada" />
+  <meta name="description" content="Settings and Steps for installing, setting up, and adjusting the iAPS iOS app developed by Jon Björn Mårtensson from FreeAPS X, an artificial pancreas system for iOS based on OpenAPS, and being used by BC Diabetes in Vancouver, BC Canada" />
   <meta name="generator" content="bookdown 0.31 and GitBook 2.6.7" />
 
   <meta property="og:title" content="iAPS User Guide" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="Settings and Steps for installing, setting up, and adjusting the iAPS iOS app, based on FreeAPS X and being used by BC Diabetes in Vancouver, BC Canada" />
+  <meta property="og:description" content="Settings and Steps for installing, setting up, and adjusting the iAPS iOS app developed by Jon Björn Mårtensson from FreeAPS X, an artificial pancreas system for iOS based on OpenAPS, and being used by BC Diabetes in Vancouver, BC Canada" />
   <meta name="github-repo" content="stuzog/iAPS" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="iAPS User Guide" />
   
-  <meta name="twitter:description" content="Settings and Steps for installing, setting up, and adjusting the iAPS iOS app, based on FreeAPS X and being used by BC Diabetes in Vancouver, BC Canada" />
+  <meta name="twitter:description" content="Settings and Steps for installing, setting up, and adjusting the iAPS iOS app developed by Jon Björn Mårtensson from FreeAPS X, an artificial pancreas system for iOS based on OpenAPS, and being used by BC Diabetes in Vancouver, BC Canada" />
   
 
-<meta name="author" content="By Stuart Hertzog and Marc Fornier" />
+<meta name="author" content="By Stuart Hertzog, Marc Fornier, and Jon Björn Mårtensson" />
 
 
 
@@ -71,7 +71,7 @@
 <li><a href="./">iAPS User Guide</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> IMPORTANT! Stop Automatic Updates</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> IMPORTANT! Prevent Automatic Updates</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#how-to-use-this-documentation"><i class="fa fa-check"></i><b>1.1</b> How To Use This Documentation</a></li>
 </ul></li>
@@ -92,9 +92,8 @@
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="initial-settings.html"><a href="initial-settings.html#target-ranges"><i class="fa fa-check"></i><b>2.3</b> Target Ranges</a></li>
 <li class="chapter" data-level="2.4" data-path="initial-settings.html"><a href="initial-settings.html#autotune"><i class="fa fa-check"></i><b>2.4</b> Autotune</a></li>
-<li class="chapter" data-level="2.5" data-path="initial-settings.html"><a href="initial-settings.html#connect-to-apple-health"><i class="fa fa-check"></i><b>2.5</b> Connect To Apple Health</a></li>
-<li class="chapter" data-level="2.6" data-path="initial-settings.html"><a href="initial-settings.html#individual-settings"><i class="fa fa-check"></i><b>2.6</b> Individual Settings</a></li>
-<li class="chapter" data-level="2.7" data-path="initial-settings.html"><a href="initial-settings.html#bcd-default-settings"><i class="fa fa-check"></i><b>2.7</b> BCD Default Settings</a></li>
+<li class="chapter" data-level="2.5" data-path="initial-settings.html"><a href="initial-settings.html#individual-settings"><i class="fa fa-check"></i><b>2.5</b> Individual Settings</a></li>
+<li class="chapter" data-level="2.6" data-path="initial-settings.html"><a href="initial-settings.html#bcd-default-settings"><i class="fa fa-check"></i><b>2.6</b> BCD Default Settings</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="add-pump.html"><a href="add-pump.html"><i class="fa fa-check"></i><b>3</b> Add Pump</a>
 <ul>
@@ -105,10 +104,15 @@
 </ul></li>
 <li class="chapter" data-level="4" data-path="dynamic-isf.html"><a href="dynamic-isf.html"><i class="fa fa-check"></i><b>4</b> Dynamic ISF</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="dynamic-isf.html"><a href="dynamic-isf.html#to-switch-to-the-new-dynisf"><i class="fa fa-check"></i><b>4.1</b> To switch to the new <em>dynISF</em></a></li>
-<li class="chapter" data-level="4.2" data-path="dynamic-isf.html"><a href="dynamic-isf.html#adjustment-factor"><i class="fa fa-check"></i><b>4.2</b> Adjustment Factor</a>
+<li class="chapter" data-level="4.1" data-path="dynamic-isf.html"><a href="dynamic-isf.html#adjustment-factor"><i class="fa fa-check"></i><b>4.1</b> Adjustment Factor</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="dynamic-isf.html"><a href="dynamic-isf.html#ballpark-formula"><i class="fa fa-check"></i><b>4.2.1</b> Ballpark Formula</a></li>
+<li class="chapter" data-level="4.1.1" data-path="dynamic-isf.html"><a href="dynamic-isf.html#switch-on-sigmoid-function"><i class="fa fa-check"></i><b>4.1.1</b> Switch On <em>Sigmoid Function</em></a></li>
+<li class="chapter" data-level="4.1.2" data-path="dynamic-isf.html"><a href="dynamic-isf.html#ballpark-formula"><i class="fa fa-check"></i><b>4.1.2</b> Ballpark Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="dynamic-isf.html"><a href="dynamic-isf.html#autosens"><i class="fa fa-check"></i><b>4.2</b> AutoSens</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="dynamic-isf.html"><a href="dynamic-isf.html#autosens-default-settings"><i class="fa fa-check"></i><b>4.2.1</b> Autosens Default Settings</a></li>
+<li class="chapter" data-level="4.2.2" data-path="dynamic-isf.html"><a href="dynamic-isf.html#autosens-can-be-disabled"><i class="fa fa-check"></i><b>4.2.2</b> Autosens Can Be Disabled</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html"><i class="fa fa-check"></i><b>5</b> Fine-Tuning Using Your Log Files</a>
@@ -153,14 +157,13 @@
 <li class="chapter" data-level="8.2.5" data-path="appendices.html"><a href="appendices.html#notifications-1"><i class="fa fa-check"></i><b>8.2.5</b> Notifications</a></li>
 <li class="chapter" data-level="8.2.6" data-path="appendices.html"><a href="appendices.html#configuration-1"><i class="fa fa-check"></i><b>8.2.6</b> CONFIGURATION</a></li>
 <li class="chapter" data-level="8.2.7" data-path="appendices.html"><a href="appendices.html#pump-settings"><i class="fa fa-check"></i><b>8.2.7</b> Pump Settings</a></li>
-<li class="chapter" data-level="8.2.8" data-path="appendices.html"><a href="appendices.html#basal-profile-1"><i class="fa fa-check"></i><b>8.2.8</b> Basal Profile</a></li>
-<li class="chapter" data-level="8.2.9" data-path="appendices.html"><a href="appendices.html#insulin-sensitivities-1"><i class="fa fa-check"></i><b>8.2.9</b> Insulin Sensitivities</a></li>
-<li class="chapter" data-level="8.2.10" data-path="appendices.html"><a href="appendices.html#carb-ratios-1"><i class="fa fa-check"></i><b>8.2.10</b> Carb Ratios</a></li>
-<li class="chapter" data-level="8.2.11" data-path="appendices.html"><a href="appendices.html#target-ranges-1"><i class="fa fa-check"></i><b>8.2.11</b> Target Ranges</a></li>
-<li class="chapter" data-level="8.2.12" data-path="appendices.html"><a href="appendices.html#autotune-1"><i class="fa fa-check"></i><b>8.2.12</b> Autotune</a></li>
-<li class="chapter" data-level="8.2.13" data-path="appendices.html"><a href="appendices.html#developer"><i class="fa fa-check"></i><b>8.2.13</b> DEVELOPER</a></li>
-<li class="chapter" data-level="8.2.14" data-path="appendices.html"><a href="appendices.html#animated-background"><i class="fa fa-check"></i><b>8.2.14</b> Animated Background</a></li>
-<li class="chapter" data-level="8.2.15" data-path="appendices.html"><a href="appendices.html#share-logs"><i class="fa fa-check"></i><b>8.2.15</b> Share logs</a></li>
+<li class="chapter" data-level="8.2.8" data-path="appendices.html"><a href="appendices.html#insulin-sensitivities-1"><i class="fa fa-check"></i><b>8.2.8</b> Insulin Sensitivities</a></li>
+<li class="chapter" data-level="8.2.9" data-path="appendices.html"><a href="appendices.html#carb-ratios-1"><i class="fa fa-check"></i><b>8.2.9</b> Carb Ratios</a></li>
+<li class="chapter" data-level="8.2.10" data-path="appendices.html"><a href="appendices.html#target-ranges-1"><i class="fa fa-check"></i><b>8.2.10</b> Target Ranges</a></li>
+<li class="chapter" data-level="8.2.11" data-path="appendices.html"><a href="appendices.html#autotune-1"><i class="fa fa-check"></i><b>8.2.11</b> Autotune</a></li>
+<li class="chapter" data-level="8.2.12" data-path="appendices.html"><a href="appendices.html#developer"><i class="fa fa-check"></i><b>8.2.12</b> DEVELOPER</a></li>
+<li class="chapter" data-level="8.2.13" data-path="appendices.html"><a href="appendices.html#animated-background"><i class="fa fa-check"></i><b>8.2.13</b> Animated Background</a></li>
+<li class="chapter" data-level="8.2.14" data-path="appendices.html"><a href="appendices.html#share-logs"><i class="fa fa-check"></i><b>8.2.14</b> Share logs</a></li>
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="appendices.html"><a href="appendices.html#appendix-c-preferences"><i class="fa fa-check"></i><b>8.3</b> Appendix C: Preferences</a>
 <ul>
@@ -214,11 +217,11 @@
             <section class="normal" id="section-">
 <div id="header">
 <h1 class="title">iAPS User Guide</h1>
-<p class="author"><em>By Stuart Hertzog and Marc Fornier</em></p>
-<p class="date"><em>v.1.0.4 2023-01-13</em></p>
+<p class="author"><em>By Stuart Hertzog, Marc Fornier, and Jon Björn Mårtensson</em></p>
+<p class="date"><em>v.1.0.5 2023-01-18</em></p>
 </div>
-<div id="important-stop-automatic-updates" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">1</span> IMPORTANT! Stop Automatic Updates<a href="index.html#important-stop-automatic-updates" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="important-prevent-automatic-updates" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">1</span> IMPORTANT! Prevent Automatic Updates<a href="index.html#important-prevent-automatic-updates" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>If <strong>TestFlight</strong> on your iPhone is set to <em>Autoupdate</em> for any app, it will immediately replace your existing copy of that app when a new update is released.</p>
 <p>But if an update to <em>iAPS</em> resets your <em>Preferences</em>, you will lose all the <em>Settings</em> you have set, and if you have not saved a recent copy of them, you will have to go through the entire <strong>Setup</strong> process agan.</p>
 <p>To stop this from happening:</p>
