@@ -91,3 +91,6 @@ individual-patient-data-ipd-sharing-statement
 governing-law
 jurisdiction
 consent
+statistics
+openaps-other-settings-1
+basal-profile-1
