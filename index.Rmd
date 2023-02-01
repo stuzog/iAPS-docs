@@ -1,0 +1,35 @@
+--- 
+title: "iAPS User Guide"
+author: "By Stuart Hertzog and Marc Fornier"
+date: "v.1.0.8 `r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography:
+- book.bib
+- packages.bib
+biblio-style: apalike
+link-citations: yes
+github-repo: "stuzog/iAPS"
+description: "Settings and Steps for installing, setting up, and adjusting the iAPS iOS app developed by Jon Björn Mårtensson from FreeAPS X, an artificial pancreas system for iOS based on OpenAPS, and being used by BC Diabetes in Vancouver, BC Canada"
+---
+
+# IMPORTANT! Prevent Automatic Updates
+
+If **TestFlight** on your iPhone is set to *Autoupdate* for any app, it will immediately replace your existing copy of that app when a new update is released.
+
+But if an update to *iAPS* resets your *Preferences*, you will lose all the *Settings* you have set, and if you have not saved a recent copy of them, you will have to go through the entire **Setup** process agan.
+
+To stop this from happening:
+
+1. Open **TestFlight** on your iPhone
+2. Tap on the *iAPS* app
+3. **TURN Off Automatic Updates** under *App Information*
+
+Repeat this process on any other devices that have *iAPS* listed in **TestFlight**.
+
+## How To Use This Documentation
+
+You can click on a **Topic** or first-level **Sub-Topic** on the left to display it in the **View Pane** (this Pane). Any lower-level **Sub-Topics** also will be revealed.
+
+A detailed [Help Document](#how-to-use-this-guide) is also available.
+

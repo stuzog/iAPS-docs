@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>7 Bolusing for Meals | iAPS User Guide</title>
+  <meta name="description" content="Settings and Steps for installing, setting up, and adjusting the iAPS iOS app developed by Jon Björn Mårtensson from FreeAPS X, an artificial pancreas system for iOS based on OpenAPS, and being used by BC Diabetes in Vancouver, BC Canada" />
+  <meta name="generator" content="bookdown 0.31 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="7 Bolusing for Meals | iAPS User Guide" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Settings and Steps for installing, setting up, and adjusting the iAPS iOS app developed by Jon Björn Mårtensson from FreeAPS X, an artificial pancreas system for iOS based on OpenAPS, and being used by BC Diabetes in Vancouver, BC Canada" />
+  <meta name="github-repo" content="stuzog/iAPS" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7 Bolusing for Meals | iAPS User Guide" />
+  
+  <meta name="twitter:description" content="Settings and Steps for installing, setting up, and adjusting the iAPS iOS app developed by Jon Björn Mårtensson from FreeAPS X, an artificial pancreas system for iOS based on OpenAPS, and being used by BC Diabetes in Vancouver, BC Canada" />
+  
+
+<meta name="author" content="By Stuart Hertzog and Marc Fornier" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="fine-tuning-using-your-log-files.html"/>
+<link rel="next" href="how-to-use-this-guide.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">iAPS User Guide</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> IMPORTANT! Prevent Automatic Updates</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#how-to-use-this-documentation"><i class="fa fa-check"></i><b>1.1</b> How To Use This Documentation</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="bcd-default-settings.html"><a href="bcd-default-settings.html"><i class="fa fa-check"></i><b>2</b> BCD Default Settings</a></li>
+<li class="chapter" data-level="3" data-path="initial-settings.html"><a href="initial-settings.html"><i class="fa fa-check"></i><b>3</b> Initial Settings</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="initial-settings.html"><a href="initial-settings.html#services"><i class="fa fa-check"></i><b>3.1</b> SERVICES</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="initial-settings.html"><a href="initial-settings.html#nightscout"><i class="fa fa-check"></i><b>3.1.1</b> Nightscout</a></li>
+<li class="chapter" data-level="3.1.2" data-path="initial-settings.html"><a href="initial-settings.html#cgm"><i class="fa fa-check"></i><b>3.1.2</b> CGM</a></li>
+<li class="chapter" data-level="3.1.3" data-path="initial-settings.html"><a href="initial-settings.html#notifications"><i class="fa fa-check"></i><b>3.1.3</b> Notifications</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="initial-settings.html"><a href="initial-settings.html#configuration"><i class="fa fa-check"></i><b>3.2</b> CONFIGURATION</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="initial-settings.html"><a href="initial-settings.html#preferences"><i class="fa fa-check"></i><b>3.2.1</b> Preferences</a></li>
+<li class="chapter" data-level="3.2.2" data-path="initial-settings.html"><a href="initial-settings.html#basal-profile"><i class="fa fa-check"></i><b>3.2.2</b> Basal Profile</a></li>
+<li class="chapter" data-level="3.2.3" data-path="initial-settings.html"><a href="initial-settings.html#insulin-sensitivities"><i class="fa fa-check"></i><b>3.2.3</b> Insulin Sensitivities</a></li>
+<li class="chapter" data-level="3.2.4" data-path="initial-settings.html"><a href="initial-settings.html#carb-ratios"><i class="fa fa-check"></i><b>3.2.4</b> Carb Ratios</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="initial-settings.html"><a href="initial-settings.html#target-ranges"><i class="fa fa-check"></i><b>3.3</b> Target Ranges</a></li>
+<li class="chapter" data-level="3.4" data-path="initial-settings.html"><a href="initial-settings.html#autotune"><i class="fa fa-check"></i><b>3.4</b> Autotune</a></li>
+<li class="chapter" data-level="3.5" data-path="initial-settings.html"><a href="initial-settings.html#individual-settings"><i class="fa fa-check"></i><b>3.5</b> Individual Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="add-pump.html"><a href="add-pump.html"><i class="fa fa-check"></i><b>4</b> Add Pump</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="add-pump.html"><a href="add-pump.html#if-you-are-upgrading-from-freeaps-x"><i class="fa fa-check"></i><b>4.1</b> If You Are Upgrading From FreeAPS X</a></li>
+<li class="chapter" data-level="4.2" data-path="add-pump.html"><a href="add-pump.html#if-you-are-upgrading-from-loop-to-iaps"><i class="fa fa-check"></i><b>4.2</b> If You Are Upgrading From Loop to iAPS</a></li>
+<li class="chapter" data-level="4.3" data-path="add-pump.html"><a href="add-pump.html#to-change-from-eros-to-dash-pods"><i class="fa fa-check"></i><b>4.3</b> To Change From Eros To Dash Pods</a></li>
+<li class="chapter" data-level="4.4" data-path="add-pump.html"><a href="add-pump.html#close-loop"><i class="fa fa-check"></i><b>4.4</b> Close Loop</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="dynamic-isf.html"><a href="dynamic-isf.html"><i class="fa fa-check"></i><b>5</b> Dynamic ISF</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="dynamic-isf.html"><a href="dynamic-isf.html#adjustment-factor"><i class="fa fa-check"></i><b>5.1</b> Adjustment Factor</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="dynamic-isf.html"><a href="dynamic-isf.html#switch-on-sigmoid-function"><i class="fa fa-check"></i><b>5.1.1</b> Switch On <em>Sigmoid Function</em></a></li>
+<li class="chapter" data-level="5.1.2" data-path="dynamic-isf.html"><a href="dynamic-isf.html#ballpark-formula"><i class="fa fa-check"></i><b>5.1.2</b> Ballpark Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="dynamic-isf.html"><a href="dynamic-isf.html#autosens"><i class="fa fa-check"></i><b>5.2</b> AutoSens</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="dynamic-isf.html"><a href="dynamic-isf.html#autosens-default-settings"><i class="fa fa-check"></i><b>5.2.1</b> Autosens Default Settings</a></li>
+<li class="chapter" data-level="5.2.2" data-path="dynamic-isf.html"><a href="dynamic-isf.html#autosens-can-be-disabled"><i class="fa fa-check"></i><b>5.2.2</b> Autosens Can Be Disabled</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html"><i class="fa fa-check"></i><b>6</b> Fine-Tuning Using Your Log Files</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#copying-your-log-files-to-your-mac"><i class="fa fa-check"></i><b>6.1</b> Copying Your Log Files to Your Mac</a></li>
+<li class="chapter" data-level="6.2" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#setting-uamsmbsmb-limitations"><i class="fa fa-check"></i><b>6.2</b> Setting UAMSMB/SMB Limitations</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#safety-limiters"><i class="fa fa-check"></i><b>6.2.1</b> Safety Limiters</a></li>
+<li class="chapter" data-level="6.2.2" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#open-terminal-on-your-mac"><i class="fa fa-check"></i><b>6.2.2</b> Open Terminal on Your Mac</a></li>
+<li class="chapter" data-level="6.2.3" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#find-and-compare-the-ratio-of-smb-limited-lines"><i class="fa fa-check"></i><b>6.2.3</b> Find and Compare The Ratio of SMB-Limited Lines</a></li>
+<li class="chapter" data-level="6.2.4" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#an-easier-way-for-the-rest-of-us"><i class="fa fa-check"></i><b>6.2.4</b> An Easier Way for the Rest of Us</a></li>
+<li class="chapter" data-level="6.2.5" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#checking-the-results"><i class="fa fa-check"></i><b>6.2.5</b> Checking The Results</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="bolusing-for-meals.html"><a href="bolusing-for-meals.html"><i class="fa fa-check"></i><b>7</b> Bolusing for Meals</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="bolusing-for-meals.html"><a href="bolusing-for-meals.html#rule-of-thumb-meal-bolusing"><i class="fa fa-check"></i><b>7.1</b> Rule-of-Thumb Meal Bolusing</a></li>
+<li class="chapter" data-level="7.2" data-path="bolusing-for-meals.html"><a href="bolusing-for-meals.html#let-iaps-do-its-work"><i class="fa fa-check"></i><b>7.2</b> Let iAPS Do Its Work</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="how-to-use-this-guide.html"><a href="how-to-use-this-guide.html"><i class="fa fa-check"></i><b>8</b> How To Use This Guide</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="how-to-use-this-guide.html"><a href="how-to-use-this-guide.html#the-sidebar"><i class="fa fa-check"></i><b>8.1</b> The Sidebar</a></li>
+<li class="chapter" data-level="8.2" data-path="how-to-use-this-guide.html"><a href="how-to-use-this-guide.html#the-toolbar"><i class="fa fa-check"></i><b>8.2</b> The Toolbar</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="how-to-use-this-guide.html"><a href="how-to-use-this-guide.html#showhide"><i class="fa fa-check"></i><b>8.2.1</b> Show/Hide</a></li>
+<li class="chapter" data-level="8.2.2" data-path="how-to-use-this-guide.html"><a href="how-to-use-this-guide.html#search"><i class="fa fa-check"></i><b>8.2.2</b> Search</a></li>
+<li class="chapter" data-level="8.2.3" data-path="how-to-use-this-guide.html"><a href="how-to-use-this-guide.html#theme-settings"><i class="fa fa-check"></i><b>8.2.3</b> Theme settings</a></li>
+<li class="chapter" data-level="8.2.4" data-path="how-to-use-this-guide.html"><a href="how-to-use-this-guide.html#downloads"><i class="fa fa-check"></i><b>8.2.4</b> Downloads</a></li>
+<li class="chapter" data-level="8.2.5" data-path="how-to-use-this-guide.html"><a href="how-to-use-this-guide.html#sharing"><i class="fa fa-check"></i><b>8.2.5</b> Sharing</a></li>
+<li class="chapter" data-level="8.2.6" data-path="how-to-use-this-guide.html"><a href="how-to-use-this-guide.html#information"><i class="fa fa-check"></i><b>8.2.6</b> Information</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="appendices.html"><a href="appendices.html"><i class="fa fa-check"></i><b>9</b> Appendices</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="appendices.html"><a href="appendices.html#appendix-a-acronyms"><i class="fa fa-check"></i><b>9.1</b> Appendix A: Acronyms</a></li>
+<li class="chapter" data-level="9.2" data-path="appendices.html"><a href="appendices.html#appendix-b-settings"><i class="fa fa-check"></i><b>9.2</b> Appendix B: Settings</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="appendices.html"><a href="appendices.html#freeaps-x-vversion"><i class="fa fa-check"></i><b>9.2.1</b> FREEAPS X V(version)</a></li>
+<li class="chapter" data-level="9.2.2" data-path="appendices.html"><a href="appendices.html#devices"><i class="fa fa-check"></i><b>9.2.2</b> DEVICES</a></li>
+<li class="chapter" data-level="9.2.3" data-path="appendices.html"><a href="appendices.html#services-1"><i class="fa fa-check"></i><b>9.2.3</b> SERVICES</a></li>
+<li class="chapter" data-level="9.2.4" data-path="appendices.html"><a href="appendices.html#apple-health"><i class="fa fa-check"></i><b>9.2.4</b> Apple Health</a></li>
+<li class="chapter" data-level="9.2.5" data-path="appendices.html"><a href="appendices.html#notifications-1"><i class="fa fa-check"></i><b>9.2.5</b> Notifications</a></li>
+<li class="chapter" data-level="9.2.6" data-path="appendices.html"><a href="appendices.html#configuration-1"><i class="fa fa-check"></i><b>9.2.6</b> CONFIGURATION</a></li>
+<li class="chapter" data-level="9.2.7" data-path="appendices.html"><a href="appendices.html#pump-settings"><i class="fa fa-check"></i><b>9.2.7</b> Pump Settings</a></li>
+<li class="chapter" data-level="9.2.8" data-path="appendices.html"><a href="appendices.html#insulin-sensitivities-1"><i class="fa fa-check"></i><b>9.2.8</b> Insulin Sensitivities</a></li>
+<li class="chapter" data-level="9.2.9" data-path="appendices.html"><a href="appendices.html#carb-ratios-1"><i class="fa fa-check"></i><b>9.2.9</b> Carb Ratios</a></li>
+<li class="chapter" data-level="9.2.10" data-path="appendices.html"><a href="appendices.html#target-ranges-1"><i class="fa fa-check"></i><b>9.2.10</b> Target Ranges</a></li>
+<li class="chapter" data-level="9.2.11" data-path="appendices.html"><a href="appendices.html#autotune-1"><i class="fa fa-check"></i><b>9.2.11</b> Autotune</a></li>
+<li class="chapter" data-level="9.2.12" data-path="appendices.html"><a href="appendices.html#developer"><i class="fa fa-check"></i><b>9.2.12</b> DEVELOPER</a></li>
+<li class="chapter" data-level="9.2.13" data-path="appendices.html"><a href="appendices.html#animated-background"><i class="fa fa-check"></i><b>9.2.13</b> Animated Background</a></li>
+<li class="chapter" data-level="9.2.14" data-path="appendices.html"><a href="appendices.html#share-logs"><i class="fa fa-check"></i><b>9.2.14</b> Share logs</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="appendices.html"><a href="appendices.html#appendix-c-preferences"><i class="fa fa-check"></i><b>9.3</b> Appendix C: Preferences</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="appendices.html"><a href="appendices.html#freeaps-x-1"><i class="fa fa-check"></i><b>9.3.1</b> FREEAPS X</a></li>
+<li class="chapter" data-level="9.3.2" data-path="appendices.html"><a href="appendices.html#openaps-main-settings-1"><i class="fa fa-check"></i><b>9.3.2</b> OPENAPS MAIN SETTINGS</a></li>
+<li class="chapter" data-level="9.3.3" data-path="appendices.html"><a href="appendices.html#dynamic-settings-1"><i class="fa fa-check"></i><b>9.3.3</b> DYNAMIC SETTINGS</a></li>
+<li class="chapter" data-level="9.3.4" data-path="appendices.html"><a href="appendices.html#open-aps-smb-settings"><i class="fa fa-check"></i><b>9.3.4</b> OPEN APS SMB SETTINGS</a></li>
+<li class="chapter" data-level="9.3.5" data-path="appendices.html"><a href="appendices.html#openaps-targets-settings-1"><i class="fa fa-check"></i><b>9.3.5</b> OPENAPS TARGETS SETTINGS</a></li>
+<li class="chapter" data-level="9.3.6" data-path="appendices.html"><a href="appendices.html#openaps-other-settings-1"><i class="fa fa-check"></i><b>9.3.6</b> OPENAPS OTHER SETTINGS</a></li>
+<li class="chapter" data-level="9.3.7" data-path="appendices.html"><a href="appendices.html#use-auto-isf"><i class="fa fa-check"></i><b>9.3.7</b> USE AUTO ISF</a></li>
+<li class="chapter" data-level="9.3.8" data-path="appendices.html"><a href="appendices.html#autoisf-settings"><i class="fa fa-check"></i><b>9.3.8</b> AUTOISF SETTINGS</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="bc-diabetes-looping-agreement.html"><a href="bc-diabetes-looping-agreement.html"><i class="fa fa-check"></i><b>10</b> BC Diabetes Looping Agreement</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="bc-diabetes-looping-agreement.html"><a href="bc-diabetes-looping-agreement.html#background"><i class="fa fa-check"></i><b>10.1</b> Background</a></li>
+<li class="chapter" data-level="10.2" data-path="bc-diabetes-looping-agreement.html"><a href="bc-diabetes-looping-agreement.html#what-we-believe"><i class="fa fa-check"></i><b>10.2</b> What We Believe</a></li>
+<li class="chapter" data-level="10.3" data-path="bc-diabetes-looping-agreement.html"><a href="bc-diabetes-looping-agreement.html#approved-ap-systems"><i class="fa fa-check"></i><b>10.3</b> Approved AP Systems</a></li>
+<li class="chapter" data-level="10.4" data-path="bc-diabetes-looping-agreement.html"><a href="bc-diabetes-looping-agreement.html#this-consent-and-waiver"><i class="fa fa-check"></i><b>10.4</b> This Consent and Waiver</a>
+<ul>
+<li class="chapter" data-level="10.4.1" data-path="bc-diabetes-looping-agreement.html"><a href="bc-diabetes-looping-agreement.html#hardware-components"><i class="fa fa-check"></i><b>10.4.1</b> Hardware Components</a></li>
+<li class="chapter" data-level="10.4.2" data-path="bc-diabetes-looping-agreement.html"><a href="bc-diabetes-looping-agreement.html#possible-risks"><i class="fa fa-check"></i><b>10.4.2</b> Possible Risks</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="bc-diabetes-looping-agreement.html"><a href="bc-diabetes-looping-agreement.html#agreement"><i class="fa fa-check"></i><b>10.5</b> Agreement</a>
+<ul>
+<li class="chapter" data-level="10.5.1" data-path="bc-diabetes-looping-agreement.html"><a href="bc-diabetes-looping-agreement.html#individual-patient-data-ipd-sharing-statement"><i class="fa fa-check"></i><b>10.5.1</b> Individual Patient Data (IPD) Sharing Statement</a></li>
+<li class="chapter" data-level="10.5.2" data-path="bc-diabetes-looping-agreement.html"><a href="bc-diabetes-looping-agreement.html#governing-law"><i class="fa fa-check"></i><b>10.5.2</b> Governing Law</a></li>
+<li class="chapter" data-level="10.5.3" data-path="bc-diabetes-looping-agreement.html"><a href="bc-diabetes-looping-agreement.html#jurisdiction"><i class="fa fa-check"></i><b>10.5.3</b> Jurisdiction</a></li>
+<li class="chapter" data-level="10.5.4" data-path="bc-diabetes-looping-agreement.html"><a href="bc-diabetes-looping-agreement.html#consent"><i class="fa fa-check"></i><b>10.5.4</b> Consent</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">iAPS User Guide</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="bolusing-for-meals" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">7</span> Bolusing for Meals<a href="bolusing-for-meals.html#bolusing-for-meals" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><strong><em>FreeAPS (FAX)</em> does not actually give meal bolus recommendations as does <em>Loop</em></strong>. Here’s what the Meals section of <a href="https://www.loopandlearn.org/freeaps-x/">LoopAndLearn FreeAPS docs</a> recommends:</p>
+<p><strong>The built-in function to give a bolus is not a bolus calculator</strong> in the same way as <em>Loop</em> has one, so don’t expect it to give you enough insulin.</p>
+<p><strong>It takes the <em>insulinReq</em> calculation and uses it to provide a bolus estimate</strong>. The <em>insulinReq</em> value is calculated based on a number of prediction curves, and when carbs are added, it mediates the effect of carbs with the other curves.</p>
+<p><strong><em>It’s not a bolus calculator</em></strong>. The <strong><em>insulinReq</em></strong> value is not necessarily as much insulin as the normal meal bolus would be (it’s conservative for safety reasons).</p>
+<p><strong>The recommendation with <em>oref1</em> is to bolus 60%-75% of required meal bolus</strong> and leave the algorithm to deal with variation in absorption. This is the way most people use it.</p>
+<div id="rule-of-thumb-meal-bolusing" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Rule-of-Thumb Meal Bolusing<a href="bolusing-for-meals.html#rule-of-thumb-meal-bolusing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Rather than pull out a calculator</strong>, one pre-bolus strategy might be to form a rule-of-thumb scale for yourself like the following. You should make your own based on your needs and <strong><em>Carb Ratio (CR)</em></strong>:</p>
+<ul>
+<li><strong>Small meal</strong> 20g or less –&gt; <strong>2U</strong></li>
+<li><strong>Medium-size meal</strong> 20g-40g –&gt; <strong>3U</strong></li>
+<li><strong>Big meal</strong> 40g or more –&gt; <strong>4U</strong></li>
+</ul>
+<p><strong>Your scale should be based upon your carb ratio and the % of upfront bolus that you prefer</strong>. For example, with a Carb Ratio of 10, the above meal boluses would provide a:
+* 100% upfront bolus for 20g
+* 75% upfront bolus for 40g, and
+* 67% upfront bolus for 60g</p>
+</div>
+<div id="let-iaps-do-its-work" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Let iAPS Do Its Work<a href="bolusing-for-meals.html#let-iaps-do-its-work" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>With an appropriate pre-bolus and Settings, <strong>you should NOT need to issue manual boluses after your meal</strong>. This may be a difficult task coming from Loop!</p>
+<p>If you used automatic bolus with <em>Loop</em> or the <em>FreeAPS</em> fork, youll find Temp Basal a little slower than you are used to, but its worth taking the time to test and adjust your settings before you turn on <em>SMB/UAM</em>.</p>
+<p>Observe for a few days and make adjustments as needed so that you wont have to issue correction meal boluses.</p>
+<p>(Thanks to <a href="https://www.loopandlearn.org">LoopAndLearn</a> for this.)</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="fine-tuning-using-your-log-files.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="how-to-use-this-guide.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/stuzog/iAPS/edit/master/Bolusing_For_Meals.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/stuzog/iAPS/blob/master/Bolusing_For_Meals.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

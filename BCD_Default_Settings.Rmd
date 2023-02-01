@@ -1,0 +1,12 @@
+# BCD Default Settings
+
+A up-to-date listing of **BCDiabetes default iAPS settings** can be viewed at:
+
+<https://sites.google.com/bcdiabetes.ca/iaps-settings/home?pli=1>
+
+These are the settings currently set as default in a new distribution of the  _iAPS.app_. Your can refer to this listing at any time.
+
+This listing is useful if you need to re-enter the default settings after an unexpected update, or to compare your settings to current BCD defaults.
+
+The Settings in RED are those unique to each individual.
+
