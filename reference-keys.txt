@@ -1,6 +1,6 @@
 important-prevent-automatic-updates
 how-to-use-this-documentation
-bcd-default-settings
+iaps.app-default-settings
 initial-settings
 services
 nightscout
@@ -92,5 +92,3 @@ individual-patient-data-ipd-sharing-statement
 governing-law
 jurisdiction
 consent
-openaps-other-settings
-basal-profile-1
