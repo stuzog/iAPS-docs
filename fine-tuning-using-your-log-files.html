@@ -126,6 +126,7 @@
 <li class="chapter" data-level="6.2.4" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#an-easier-way-for-the-rest-of-us"><i class="fa fa-check"></i><b>6.2.4</b> An Easier Way for the Rest of Us</a></li>
 <li class="chapter" data-level="6.2.5" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#checking-the-results"><i class="fa fa-check"></i><b>6.2.5</b> Checking The Results</a></li>
 </ul></li>
+<li class="chapter" data-level="6.3" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#sending-log-files-after-a-crash"><i class="fa fa-check"></i><b>6.3</b> Sending Log Files After A Crash</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="bolusing-for-meals.html"><a href="bolusing-for-meals.html"><i class="fa fa-check"></i><b>7</b> Bolusing for Meals</a>
 <ul>
@@ -271,7 +272,7 @@ Dynamic ISF limited by autosens_max setting: 1.3 (1.3)</code></pre>
 </ul></li>
 <li>Press [ENTER/RETURN]. This will change <em>Terminal</em> to the log file directory.</li>
 </ul>
-<p>You can type <code>ls</code> then tap [RETURN/ENTER] to list the log files.<br />
+<p>You can type <code>ls</code> then tap [RETURN/ENTER] to list the log files.
 The following commands will now work correctly.</p>
 </div>
 </div>
@@ -319,8 +320,43 @@ DEV: JavaScript log: SMB limited by maxUAMSMBBasalMinutes [ 60m ]: 1.5U ( 6.1U )
 <h3><span class="header-section-number">6.2.5</span> Checking The Results<a href="fine-tuning-using-your-log-files.html#checking-the-results" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To check this (except the first day or so), run the above commands on the <code>log_prev.txt</code> file, which reports the previous 24-hour period. Leave it run for a full day before rechecking.</p>
 <p>If everything else is set up correctly for you, these SMB maximums wont be needed in the future. But now you can know for sure that they are based on the results returned in your log files.</p>
-
 </div>
+</div>
+<div id="sending-log-files-after-a-crash" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Sending Log Files After A Crash<a href="fine-tuning-using-your-log-files.html#sending-log-files-after-a-crash" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>After an unexpected crash of the iAPS app, the developer will likely want to see your log files. This is a bit more complicated because these files are quite large.</p>
+<ol style="list-style-type: decimal">
+<li>Go to <em>iAPS -&gt; Settings</em></li>
+<li>Scroll all the way to the bottom of the list</li>
+<li>Tap <em>Share logs</em></li>
+<li>Tap <em>Save to Files</em></li>
+</ol>
+<p><em>Files.app</em> should offer to put them in the <em>iAPS Folder</em> (top center). If not, then you may need to tap <em>Back</em> a couple of times until it shows <em>iAPS</em> top center.</p>
+<p>Tap the <em>logs folder</em> and tap <em>Save</em> (top right). Always put them in the iAPS/logs” folder, to keep them separate.</p>
+<p>Open <em>Files.app</em> and find the <em>iAPS/logs</em> folder. You should see 2 files: “log” and “log_prev”</p>
+<ol style="list-style-type: decimal">
+<li>Tap (…) (top right)</li>
+<li>Tap <em>Select</em></li>
+<li>Tap the check-dots beside both those log files.</li>
+<li>Tap (…) (for some reason it’s bottom right now).
+Tap <em>Compress</em>. This will create a file called “Archive.zip”.</li>
+<li>Tap <em>(…)</em> again (top right)</li>
+<li>Tap <em>Select</em> again.</li>
+<li>This time tap the check-dot beside or inside “Archive.zip”</li>
+<li>Tap the <em>Share icon</em> (box with an up arrow, bottom left)</li>
+<li>Scroll the app icons until you find <em>Slack</em> (You may have to tap <em>…</em> to see more apps)</li>
+<li>Tap the Slack icon, <strong>making sure that BCDiabetes Loopers is selected as the Workspace</strong></li>
+<li>Tap the “destination” field</li>
+<li>Scroll to the bottom, tap <em>iAPS-crashes</em></li>
+</ol>
+<p>Done! (It’s a lot easier the second time you do it!)
+Two final notes:</p>
+<ol style="list-style-type: decimal">
+<li><p>These files are very large, so it’s a good idea to delete them afterwards. But be careful to ONLY delete the log files: there is important data in some of the other files in the iAPS folder.</p></li>
+<li><p>The software always tries to write the same two files (log” and “log_prev”). If there is already a file with those names in the folder, then the new ones get a number tacked onto the end (“log 2” and “log prev 2”… then 3, and so on. This will create “Archive 2.zip”. Send the ones with the highest number.</p></li>
+</ol>
+<p>(Thanks to David Cheslow for this.)</p>
+
 </div>
 </div>
             </section>

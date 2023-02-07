@@ -42,6 +42,7 @@ change-focus-to-the-log-file-directory
 find-and-compare-the-ratio-of-smb-limited-lines
 an-easier-way-for-the-rest-of-us
 checking-the-results
+sending-log-files-after-a-crash
 bolusing-for-meals
 rule-of-thumb-meal-bolusing
 let-iaps-do-its-work
